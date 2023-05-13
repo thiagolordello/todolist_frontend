@@ -27,7 +27,7 @@ export default function Tasks() {
           const data_tkn = JSON.parse(localStorage.getItem('name'));
           // console.log('data_tkn : ', data_tkn);
           if(data_tkn === null) navigate('/login');
-          const resultado = await axios.get(`https://tiny-addition-production.up.railway.app/tasks/${data_tkn.id}`, {
+          const resultado = await axios.get(`https://to-do-list-backend-production-0a07.up.railway.app/tasks/${data_tkn.id}`, {
             headers:{ 'Authorization': data_tkn.token }
           });
           
