@@ -26,7 +26,7 @@ export default function Register() {
     console.log(iduser, descrpt, stats);
     try {
       const data = JSON.parse(localStorage.getItem('name'));
-      const result = await axios.post(`https://to-do-list-backend-production-0a07.up.railway.app/tasks`, {
+      const result = await axios.post(`http://localhost:3001/tasks`, {
         idUser: iduser,
         description: descrpt,
         status: stats,

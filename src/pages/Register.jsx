@@ -10,7 +10,7 @@ export default function Register() {
 
   const postNewUserInBackend = async (nome, senha) => {
     try {
-      const result = await axios.post('https://to-do-list-backend-production-0a07.up.railway.app/register', {
+      const result = await axios.post('http://localhost:3001/register', {
         name:nome,
         password:senha,
       });

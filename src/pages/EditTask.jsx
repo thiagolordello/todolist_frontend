@@ -17,7 +17,7 @@ export default function EditTask() {
   const getOneTaskById = async () => {
     try {
       const data = JSON.parse(localStorage.getItem('name'));
-      const result = await axios.get(`https://to-do-list-backend-production-0a07.up.railway.app/tasks/onetask/${params.id}`, {
+      const result = await axios.get(`http://localhost:3001/tasks/onetask/${params.id}`, {
         headers: { 'Authorization': data.token }
       },
 
