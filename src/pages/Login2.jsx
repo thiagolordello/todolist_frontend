@@ -31,7 +31,7 @@ export default function Login() {
 
     const loginUser = async (nme, passwrd) => {
         try {
-           const result = await axios.post('http://localhost:3001/login', {
+           const result = await axios.post('http://login', {
             name: nme,
             password: passwrd,
            });
