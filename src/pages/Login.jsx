@@ -31,7 +31,7 @@ export default function Login() {
 
     const loginUser = async (nme, passwrd) => {
         try {
-           const result = await axios.post('http://to-do-list-backend-production-0a07.up.railway.app/login', {
+           const result = await axios.post('http://0.0.0.0/login', {
             name: nme,
             password: passwrd,
            });
