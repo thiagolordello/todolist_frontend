@@ -14,7 +14,7 @@ export default function Login() {
         const isLoggedIn = () => {
           
           if(idUser){
-            return navigate(`/tasks/${idUser}`);
+            return navigate(`https://to-do-list-backend-production-0a07.up.railway.app/tasks/${idUser}`);
           }
           else {
             navigate('/login'); 
