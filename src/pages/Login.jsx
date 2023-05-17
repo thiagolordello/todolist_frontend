@@ -36,12 +36,14 @@ export default function Login() {
       const { name, password, id, token } = result.data;
       setIdUser(id);
 
-      localStorage.name = JSON.stringify({
+      const userData = {
         name,
         password,
         id,
         token,
-      });
+      };
+
+      localStorage.setItem('userData', JSON.stringify(userData));
     } catch (error) {
       console.log(error);
     }
