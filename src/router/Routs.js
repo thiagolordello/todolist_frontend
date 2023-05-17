@@ -15,7 +15,7 @@ function Routs() {
             <Route path="/" element={ <Navigate to="/login" /> } />
             <Route path="/login" element={ <Login/> } />
             <Route path="/register" element={ <Register /> } />
-            <Route path="/tasks/:id" element={ <Tasks /> } />
+            <Route path="https://to-do-list-backend-production-0a07.up.railway.app/tasks/:id" element={ <Tasks /> } />
             <Route path="/tasks/" element={ <FormTask/> } />
             <Route path="/logout" element={ <Logout/> } />
             <Route path="/logout/login" element={ <Login2/> } />
