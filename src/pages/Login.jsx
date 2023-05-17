@@ -5,90 +5,105 @@ import '../style/login.css';
 import axios from 'axios';
 
 export default function Login() {
-  const navigate = useNavigate();
-  const { idUser, setIdUser } = useContext(todolistContext);
-  const [inptLogin, setInptLogin] = useState('');
-  const [passw, setPasswd] = useState('');
+    const navigate = useNavigate();
+    const { idUser, setIdUser } = useContext(todolistContext) ?? { idUser: null, setIdUser: () => {} };
+    //const { idUser, setIdUser } = useContext(todolistContext);
+    const [inptLogin,setInptLogin] = useState('');
+    //const [testIdUser,setTestIdUser] = useState(null);
+    const [passw, setPasswd] = useState('');
+    useEffect(() => {
+      // const idUserLocalStorage = JSON.parse(localStorage.getItem('id'));
+       //console.log("IDUSER", idUserLocalStorage);  
+      const isLoggedIn = () => {
+          
+          if(idUser){
+            return navigate(`/tasks/${idUser}`);
+          }
+          else {
+            navigate('/login'); 
+          }
 
-  useEffect(() => {
-    const isLoggedIn = () => {
-      if (idUser) {
-        const redirectUrl = `/tasks/${idUser}`;
-        navigate(redirectUrl);
-      } else {
-        navigate('/login');
-      }
-    };
-    isLoggedIn();
-  }, [idUser, navigate]);
+          // const isLoggedIn = () => {
+          //   if (idUser !== null) {
+          //     return navigate(`/tasks/${idUser}`);
+          //   } else {
+          //     navigate('/login'); 
+          //   }
+          // };
+          
 
-  const btnNewRegister = () => {
-    const redirectToRegister = '/register';
-    navigate(redirectToRegister);
-  };
+        };
+        isLoggedIn();   
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [idUser]);
 
-  const loginUser = async (nme, passwrd) => {
-    try {
-      const result = await axios.post('https://to-do-list-backend-production-0a07.up.railway.app/login', {
-        name: nme,
-        password: passwrd,
-      });
-      const { name, password, id, token } = result.data;
-      setIdUser(id);
-
-      const userData = {
-        name,
-        password,
-        id,
-        token,
-      };
-
-      localStorage.setItem('userData', JSON.stringify(userData));
-    } catch (error) {
-      console.log(error);
+    const btnNewRegister = () => {
+        const redirectToRegister = '/register';
+        navigate(redirectToRegister);
     }
-  };
 
-  return (
-    <div className='tela-login form-login-background-login'>
-      <form className='form-login'>
-        <h1>Login</h1>
-        <label htmlFor="name" className='form-label label-nome'>
+    const loginUser = async (nme, passwrd) => {
+        try {
+           const result = await axios.post('http://localhost:3001/login', {
+            name: nme,
+            password: passwrd,
+           });
+           console.log("Result id: ", result.data);
+           const { name, password, id, token } = result.data;
+           setIdUser(id);
+
+           localStorage.name = JSON.stringify({
+             name,
+             password,
+             id,
+             token,
+           });
+        } catch (error) {
+            console.log(error);  
+        }
+    }
+   
+    return (
+      <div className='tela-login form-login-background-login'>
+        <form className='form-login'>
+        <header aria-label="Login"> <h1 data-testid="titulo-login">Login</h1> </header>
+          <label htmlFor="name" id='texto-label' className='form-label label-nome'>
           Nome
           <input
             name='name'
             type='text'
-            id='name'
-            onChange={(e) => { setInptLogin(e.target.value); }}
-            className='input-user-name'
-          />
-        </label>
-        <label htmlFor='password' className='form-label label-senha'>
-          Senha
-          <input
+            id='name-input'
+            onChange={ (e) => { setInptLogin(e.target.value); } } 
+            className='input-user-name' 
+          />  
+          </label>
+          <label htmlFor='password' className='form-label label-senha'>
+            Senha
+            <input
             name='password'
             type='password'
             id='password'
-            onChange={(e) => { setPasswd(e.target.value); }}
+            onChange={ (e) => { setPasswd(e.target.value); } }
             className='input-user-passwd'
-          />
-        </label>
-        <button
-          type='button'
-          onClick={() => loginUser(inptLogin, passw)}
-          className='notHaveAccount btn-login'
-        >
-          Login
-        </button>
-
-        <button
-          type='button'
-          onClick={() => btnNewRegister()}
-          className='notHaveAccount btn-not-account'
-        >
-          Clique aqui para criar conta.
-        </button>
-      </form>
-    </div>
-  );
+            />
+          </label>
+          <button
+            name='btn-login'
+            type='button'
+            onClick={ () => loginUser(inptLogin, passw) }
+            className='notHaveAccount btn-login' 
+          >
+           Login 
+          </button>
+          
+          <button
+            type='button'
+            onClick={ () => btnNewRegister() }
+            className='notHaveAccount btn-not-account' 
+          >
+          Clique aqui para criar conta. 
+          </button>  
+        </form>
+      </div>
+    );
 }
