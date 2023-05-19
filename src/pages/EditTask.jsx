@@ -36,7 +36,7 @@ export default function EditTask() {
     
     try {
       const data = JSON.parse(localStorage.getItem('name'));
-      const result = await axios.put(`http://localhost:3001/tasks/${idTask}`, {
+      const result = await axios.put(`https://to-do-list-backend-production-0a07.up.railway.app/tasks/${idTask}`, {
         id: idTask,
         description: descrpt,
         status: stats,
