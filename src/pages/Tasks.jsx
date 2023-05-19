@@ -46,7 +46,7 @@ export default function Tasks() {
     const deleteTask = async (idTask) => {
       try {
         const data = JSON.parse(localStorage.getItem('name'));
-        await axios.delete(`http://localhost:3001/tasks/${idTask}`, {
+        await axios.delete(`https://to-do-list-backend-production-0a07.up.railway.app/tasks/${idTask}`, {
           headers:{ 'Authorization': data.token }
         },
         
