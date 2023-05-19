@@ -33,7 +33,7 @@ export default function EditTask() {
 }
 
   const updateTask = async (idTask, descrpt, stats) => {
-    
+    { console.log('IDTASK: ',idTask) }
     try {
       const data = JSON.parse(localStorage.getItem('name'));
       const result = await axios.put(`https://to-do-list-backend-production-0a07.up.railway.app/tasks/${idTask}`, {
