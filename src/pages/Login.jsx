@@ -48,7 +48,7 @@ export default function Login() {
             name: nme,
             password: passwrd,
            });
-           console.log("Result id: ", result.data);
+           //console.log("Result id: ", result.data);
            const { name, password, id, token } = result.data;
            setIdUser(id);
 
