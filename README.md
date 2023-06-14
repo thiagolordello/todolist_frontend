@@ -157,7 +157,7 @@ Com o get no elemento html testid 'subtitle-testid' verificamos se possui o text
 Com o get no elemento html testid 'btn-loigin-testid' verificamos se possui o texto 'Login'.
 
 
-## 🛠️ Construído com
+## 🛠️ Construído com.
 
 Aqui estão as tecnologias que foram usadas para construir o sistema:
 
