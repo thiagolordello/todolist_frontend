@@ -54,7 +54,7 @@ Com a aplicação rodando execute o comando para a execução dos testes.
 jest --testMatch "**/*.test.js"
 ```
 
-## 🔩 Analise de cada teste
+## 🔩 Análise de cada teste
 
 Todos os arquivos de teste estão no diretório raiz do projeto '/'. Estão dividos em seis arquivos com a nomenclatura final '.test.js'. Os arquivos são: login.test.js, register.test.js, tasks.test.js, editTask.test.js, formTask.test.js, e logout.test.js . 
 
