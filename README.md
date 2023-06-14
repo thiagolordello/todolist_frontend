@@ -171,7 +171,7 @@ Aqui estão as tecnologias que foram usadas para construir o sistema:
 * [React-icons] - Biblioteca para a utilização de ícones personalizados.
 * [React-router-dom] - Biblioteca react usada para a criação das páginas web.
 * [react-scripts] - Colecao de scripts usados na manipulação de funcionalidades react.
-* [web-vitals] - Métricas usadas para medir a eficiência do código.
+* [web-vitals] - Métricas usadas para avaliar a eficiência do código.
 
 
 
