@@ -1,20 +1,36 @@
-# Getting Started with Create React App
+# To Do List Front End - O seu app de tarefas.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto encontra-se disponível para em (repulsive-riddle-production.up.railway.app).
 
-## Available Scripts
+### 📋 Pré-requisitos
 
-In the project directory, you can run:
+Ter instalado em seu computador o npm ou yarn
 
-### `npm start`
+### 🔧 Instalação
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone o repositório: Abra o terminal e digite o comando abaixo. 
+```
+git clone https://github.com/thiagolordello/todolist_backend.git
+```
 
-### `npm test`
+2. Entre no diretório criado, e instale as dependências do projeto:
+```
+cd To_do_List_Project-Front-End
+
+```
+```
+npm install
+```
+ou
+
+```
+yarn install
+```
+
+3. Inicie a aplicação com o comando de script:
+```
+npm start
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
