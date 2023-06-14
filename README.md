@@ -86,7 +86,7 @@ Com o get no elemento html testid 'btn-cancel-testid' verificamos se possui o te
 
 ### No arquivo ```tasks.test.js"```, estão os testes referentes a página das tarefas no arquivo Tasks.jsx. Os casos de teste são os seguintes:
 
-```Verifica se existem elementos da pagina "Login"``` 
+```Verifica os elementos da pagina "Tasks"``` 
 Aqui verificamos se os seguintes elementos estão presentes na página:
 
 Com o get no elemento html testid 'titulo' verificamos se possui o texto 'To Do List'.
@@ -128,11 +128,30 @@ Com o get no elemento html testid 'btnCancel-testid' verificamos se possui o tex
 
 ### No arquivo ```formTask.test.js"```, estão os testes referentes a página de login no arquivo Login.jsx. Os casos de teste são os seguintes:
 
-```Verifica se existem elementos da pagina "Login"``` 
+```Verifiva se existem os elementos da pagina de cadastro da nova tarefa``` 
 Aqui verificamos se os seguintes elementos estão presentes na página:
 
+Com o get no elemento html testid 'tittlepage-testid' verificamos se possui o texto 'Nova Tarefa'.
+
+Com o get no elemento html testid 'descricao-testid' verificamos se possui o texto 'Descrição'.
+
+Com o get no elemento html testid 'input-descript-testid' verificamos se o html possui o elemento input do campo de descrição da tarefa.
+
+Com o get no elemento html testid 'status-testid' verificamos se possui o texto 'Status'.
+
+Com o get no elemento html testid 'select-testid' verificamos se o html possui o elemento.
+
+Com o get no elemento html testid 'btn-cadastrar-testid' verificamos se possui o texto 'Cadastrar'.
+
+Com o get no elemento html testid 'btn-cancel-testid' verificamos se possui o texto 'Cancelar'.
 
 ### No arquivo ```logout.test.js"```, estão os testes referentes a página de login no arquivo Login.jsx. Os casos de teste são os seguintes:
 
-```Verifica se existem elementos da pagina "Login"``` 
+```Verifica os elementos da pagina "Logoout"``` 
 Aqui verificamos se os seguintes elementos estão presentes na página:
+
+Com o get no elemento html testid 'titulo-datatesid' verificamos se possui o texto 'Logout efetuado com sucesso!'.
+
+Com o get no elemento html testid 'subtitle-testid' verificamos se possui o texto 'Retornar a pagina de login.'.
+
+Com o get no elemento html testid 'btn-loigin-testid' verificamos se possui o texto 'Login'.
