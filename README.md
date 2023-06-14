@@ -70,11 +70,17 @@ Aqui verificamos se os seguintes elementos estão presentes na página: Verifica
 Aqui verificamos se os seguintes elementos estão presentes na página: 
 
 Com o get no elemento html testid 'title-page-testid' verificamos se possui o texto 'Crie sua conta'.
+
 Com o get no elemento html testid 'txt-user-testid' verificamos se possui o texto 'Usuário'.
+
 Com o get no elemento html testid 'inpt-user-testid' verificamos se o html possui o elemento. 
+
 Com o get no elemento html testid 'passwd-testid' verificamos se possui o texto 'Senha'. 
-Com o get no elemento html testid 'inpt-passwd-testid' verificamos se o html possui o elemento. 
-Com o get no elemento html testid 'btn-Cad-testid' verificamos se possui o texto 'Cadastrar'. 
+
+Com o get no elemento html testid 'inpt-passwd-testid' verificamos se o html possui o elemento.
+
+Com o get no elemento html testid 'btn-Cad-testid' verificamos se possui o texto 'Cadastrar'.
+
 Com o get no elemento html testid 'btn-cancel-testid' verificamos se possui o texto 'Cancelar'. 
 
 
