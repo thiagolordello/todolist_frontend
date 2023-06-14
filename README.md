@@ -155,3 +155,40 @@ Com o get no elemento html testid 'titulo-datatesid' verificamos se possui o tex
 Com o get no elemento html testid 'subtitle-testid' verificamos se possui o texto 'Retornar a pagina de login.'.
 
 Com o get no elemento html testid 'btn-loigin-testid' verificamos se possui o texto 'Login'.
+
+
+## 🛠️ Construído com
+
+Aqui estão as tecnologias que foram usadas para construir o sistema:
+
+
+* [Axios] - Biblioteca usada para as requisicoes http ao backend.
+* [Jest] - Biblioteca utilizada para a geração dos testes.
+* [Moment] - Biblioteca usada para trabalhar com datas.
+* [React-Dom] - Biblioteca usada para gerar a renderização dos componentes react no navegador.
+* [React-Helmet] - Biblioteca utilizada para a manipulação das tags <> html.
+* [React] - Biblioteca usada na construção das páginas.
+* [React-icons] - Biblioteca para a utilização de ícones personalizados.
+* [React-router-dom] - Biblioteca react usada para a criação das páginas web.
+* [react-scripts] - Colecao de scripts usados na manipulação de funcionalidades react.
+* [web-vitals] - Métricas usadas para medir a eficiência do código.
+
+
+
+
+## ✒️ Autores
+
+* **Desenvolvedor** - *Trabalho Inicial* - [thiagolordello]([https://github.com/linkParaPerfil](https://github.com/thiagolordello))
+
+
+* **Colaboradores** - Alexsandro Xavier, Thiago Vieira e Logy.
+
+## 📄 Licença
+
+Este projeto tem fins apenas para estudo e demonstracão como portifólio pessoal. Está vetado o uso para fins comerciais.
+
+## 🎁 Expressões de gratidão
+
+* Aqui eu gostaria de agradecer a todos que me ajudam e me ajudaram nesta construção tão inportante pra minha carreira;
+* Gostaria de agradecer primeiro a Deus por toda ajuda que tive, e segundo lugar a minha familia que tanto me apoia nessa jornada do desenvolvimento. 🫂;
+* Agradecimento tambem aos colegas de turma Alexsandro Xavier, Thiago Vieira e Logy. Sem ajuda de vocês eu não teria concluido esse projeto. Portanto registro aqui meus sinceros agradecimentos a todos que me ajudaram a chegar onde cheguei. Gratidao.
