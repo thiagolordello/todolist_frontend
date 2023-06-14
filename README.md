@@ -90,12 +90,19 @@ Com o get no elemento html testid 'btn-cancel-testid' verificamos se possui o te
 Aqui verificamos se os seguintes elementos estão presentes na página:
 
 Com o get no elemento html testid 'titulo' verificamos se possui o texto 'To Do List'.
+
 Com o get no elemento html testid 'tarefa-testid' verificamos se possui o texto 'Tarefa'.
+
 Com o get no elemento html testid 'descricao-testid' verificamos se possui o texto 'Descrição'.
+
 Com o get no elemento html testid 'status-testid' verificamos se possui o texto 'Status'.
+
 Com o get no elemento html testid 'data-tarefa-testid' verificamos se possui o texto 'Data'.
+
 Com o get no elemento html testid 'editar-testid' verificamos se possui o texto 'Editar'.
+
 Com o get no elemento html testid 'deletar-testid' verificamos se possui o texto 'Deletar'.
+
 Com o get no elemento html testid 'btnaddtask-testid' verificamos se possui o texto 'Nova Tarefa'.
 
 
@@ -105,11 +112,17 @@ Com o get no elemento html testid 'btnaddtask-testid' verificamos se possui o te
 Aqui verificamos se os seguintes elementos estão presentes na página:
 
 Com o get no elemento html testid 'titulo-pagina-testid' verificamos se possui o texto 'Editar'.
+
 Com o get no elemento html testid 'texto-descric-testid' verificamos se possui o texto 'Descrição'.
+
 Com o get no elemento html testid 'input-desc-testid' verificamos se o html possui o elemento input do campo de descrição da tarefa.
+
 Com o get no elemento html testid 'text-staus-data-testid' verificamos se possui o texto .
+
 Com o get no elemento html testid 'select-status-datatestid' verificamos se possui o texto 'Status'.
+
 Com o get no elemento html testid 'btnSalvar-data-testid' verificamos se possui o texto 'Salvar'.
+
 Com o get no elemento html testid 'btnCancel-testid' verificamos se possui o texto 'Cancelar'.
 
 
