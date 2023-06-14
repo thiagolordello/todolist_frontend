@@ -11,6 +11,8 @@ export default function Login() {
     const [inptLogin,setInptLogin] = useState('');
     //const [testIdUser,setTestIdUser] = useState(null);
     const [passw, setPasswd] = useState('');
+    const [errorOcurred,setErrorOcurred] = useState(false);
+    const [errorMessage,setErrorMessage] = useState('')
     useEffect(() => {
       // const idUserLocalStorage = JSON.parse(localStorage.getItem('id'));
        //console.log("IDUSER", idUserLocalStorage);  
@@ -59,7 +61,9 @@ export default function Login() {
              token,
            });
         } catch (error) {
-            console.log(error);  
+            console.log(error);
+            setErrorOcurred(true);
+            setErrorMessage(error.response.data.message);  
         }
     }
    
@@ -102,7 +106,14 @@ export default function Login() {
             className='notHaveAccount btn-not-account' 
           >
           Clique aqui para criar conta. 
-          </button>  
+          </button>
+
+          { errorOcurred && (
+          <p className="error_message" disabled>
+            {errorMessage}
+          </p>
+        )}
+
         </form>
       </div>
     );

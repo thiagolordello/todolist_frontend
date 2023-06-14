@@ -119,3 +119,8 @@
     color: rgb(146, 47, 47);
     font-size: small;
   }
+
+  .error_message {
+    color: rgb(241, 6, 6);
+    
+  }
