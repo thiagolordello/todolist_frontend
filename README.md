@@ -6,6 +6,9 @@ Este sistema conta com o front end de uma aplicação de lista tarefas pessoal. 
 das manipulações da tarefa como a criação, edição, e deleção. A interface tem cores vibrantes que estimulam o usuário a produzir e manter o foco. Toda a aplicação foi desenvolvida em React com a utilizacao de Hooks para o controle de estado.
 
 
+https://github.com/thiagolordello/todolist_frontend/assets/20212304/c17af11a-992e-41ae-b2c3-629225cba090
+
+
 ### 📋 Pré-requisitos
 
 Ter instalado em seu computador o npm ou yarn
